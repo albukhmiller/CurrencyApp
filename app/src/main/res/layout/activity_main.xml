@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentations.ui.activities.MainActivity">
+
+    <include layout="@layout/my_toolbar" />
+
+    <include
+        android:id="@+id/layoutError"
+        layout="@layout/layout_error"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/pbLoader"
+        layout="@layout/layout_loader"
+        android:visibility="gone" />
+
+    <de.codecrafters.tableview.TableView xmlns:table="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tableCorrency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        table:tableView_columnCount="3"
+        table:tableView_headerColor="@color/colorHeader"
+        table:tableView_headerElevation="8" />
+</LinearLayout>

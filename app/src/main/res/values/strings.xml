@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">СurrencyApp</string>
+    <string name="update">Обновить</string>
+    <string name="text_error_view">Ошибка загрузки данных, проверьте соединение с интернетом</string>
+</resources>
