@@ -29,7 +29,8 @@ class LoaderCurrenciesInteractor @Inject constructor(private val apiServer: ApiS
                     }
 
                     override fun onResponse(call: Call<Corrency.Stock>?, response: Response<Corrency.Stock>?) {
-                        listener?.onSuccessLoad(response?.body()!!.stock)
+                        if (response!!.body() != null)
+                            listener?.onSuccessLoad(response!!.body()!!.stock)
                     }
                 })
     }
